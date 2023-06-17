@@ -1,0 +1,74 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height : 100vh;
+    overflow   : hidden;
+    background : #e0e0e0;
+    display    : grid;
+    place-items: center;
+
+    main {
+        width          : 95%;
+        max-width      : 20rem;
+        border-radius  : .5rem;
+        box-shadow     : 0 0 .3rem .1rem #0000003b;
+        min-height     : 18rem;
+        background     : linear-gradient(to top left, #fff, #ddd);
+        display        : flex;
+        flex-direction : column;
+        justify-content: space-between;
+        align-items    : center;
+        padding        : 1rem;
+
+        button {
+            padding      : .8rem;
+            border       : none;
+            border-radius: .5rem;
+            cursor       : pointer;
+
+            &#generate {
+                background: #0040b8;
+                width     : 100%;
+                color     : white;
+                font-size : 1.2rem;
+            }
+        }
+
+        .password-wrapper {
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+            width          : 100%;
+
+            .password {
+                font-size: 1.3rem;
+            }
+
+            button {
+                background: #1c944e;
+                color     : #fff;
+                font-size : 1.2rem;
+            }
+        }
+
+        .actions {
+            display        : flex;
+            flex-direction : column;
+            gap            : 1rem;
+            justify-content: start;
+            width          : 100%;
+
+            div {
+                display        : flex;
+                justify-content: start;
+                align-items    : center;
+                gap            : 1rem;
+            }
+        }
+    }
+}

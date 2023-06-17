@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./all.min.css">
+        <link rel="stylesheet" href="./style.css">
+        <title>Password Generator</title>
+    </head>
+    <body>
+        <main>
+            <div class="password-wrapper">
+                <span class="password">12345678</span>
+                <button class="copy">
+                    <i class="fa fa-clone" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="actions">
+                <div>
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">Uppercase</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="spec">
+                    <label for="spec">Special Characters</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="num">
+                    <label for="num">Numbers</label>
+                </div>
+            </div>
+            <button id="generate">Generate</button>
+        </main>
+        <script src="./all.min.js"></script>
+        <script src="./jquery.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
